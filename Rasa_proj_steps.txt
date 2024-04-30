@@ -1,0 +1,22 @@
+1. Create a folder - mkdir chatbot
+2. Go to the folder - cd chatbot
+3. create an environment - conda create -n chatbot python==3.18.10   (chatbot is the name of the env)
+4. Activate the environment - conda activate chatbot
+5. clear the cache -  python -m pip cache purge
+6. upgrade pip - python -m pip install -U pip
+7. Installing rasa - pip install rasa==3.0.2
+8. Installing websockets - pip install websockets==10.0
+9. Installing protobuf-  pip install protobuf==3.20
+10. Initialise rasa for a new project- rasa init
+    **Specify the path in current directory as - .   (type dot)
+11. Train the model - rasa Train
+    train with fixed name - rasa train --fixed-model-name model.tar.gz
+12. Use the chatbot - rasa shell
+13. Evaluate the model - rasa shell nlu
+
+for faq chatbot changes needs to be done only in 3 files
+1. NLU
+2. Domain
+3. Stories
+
+with config.yml file you can make changes in NLP pipeline
